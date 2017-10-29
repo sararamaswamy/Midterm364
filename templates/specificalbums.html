@@ -1,0 +1,11 @@
+
+<h1> Album Finder </h1>
+
+
+<h2> {{ artistdata[0]["artistName"] }} 's first five albums on iTunes:</h2><br>
+
+<ul>
+{% for item in artistdata[:5] %}
+	<li>{{ item["collectionName"] }}</li>
+{% endfor %}
+</ul>
